@@ -29,6 +29,7 @@ ask_help = "what can i do for you?"
 
 k = r.recognize_google(audio)
 
+
 if "pradeep" in k.lower():
     print(ask_help)
     os.system("Say"+ " "+ "Hi, Pradeep")
@@ -39,6 +40,9 @@ elif r.recognize_google(audio) == "hello":
 
 elif r.recognize_google(audio) == "how are you":
     os.system("Say" + " " + "I am great, how are you")
+
+elif "create" or "folder" in k:
+    os.system("mkdir" + " " + "/user/pradeep/Desktop/Python_repo")
 
 else:
     print("I didn't hear you")
