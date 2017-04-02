@@ -2,6 +2,9 @@ import quandl
 import pandas as pd
 import ssl
 import pickle
+import matplotlib.pyplot as plt 
+from matplotlib import style
+style.use("fivethirtyeight")
 
 
 #apikey for quandl site
@@ -39,5 +42,7 @@ def grab_state__data():
 
 pickle_in = open("us_states.pickle", "rb")
 hpi_data = pickle.load(pickle_in)
-print(hpi_data)
+hpi_data.plot()
+plt.legend().remove()
+plt.show()
 
