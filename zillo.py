@@ -46,3 +46,4 @@ hpi_data.plot()
 plt.legend().remove()
 plt.show()
 
+

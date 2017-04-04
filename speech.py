@@ -49,8 +49,3 @@ else:
     os.system("Say" + " " + "I didnt hear you")
     hear()
 
-#some regular expression
-
-def re():
-    someTxtis = "give test"
-    os.system("Say" + " " + "a try block for the test case")
