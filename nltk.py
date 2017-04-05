@@ -17,11 +17,9 @@ filtered_sent = []
 		filtered_sent.appene(w)
 """
 
-
 # one liner instead of the above commented out for loop________________
 
 filtered_sent = [w for w in words if not w in stop_words]
-
 
 
 print(filtered_sent)
