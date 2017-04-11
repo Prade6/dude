@@ -1,4 +1,4 @@
-"""
+
 
 import urllib
 import re
@@ -14,8 +14,3 @@ for i in urls:
 	titles = re.findall(pattern,htmltext)
 	print titles
 
-"""
-
-import webbrowser
-
-webbrowser.open("www.google.com")

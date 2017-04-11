@@ -12,7 +12,7 @@ api_key = "A-ZstTgSgsTsS3-XdHV-"
 ssl._create_default_https_context = ssl._create_unverified_context
 
 
-#reading abbv from wiki
+#reading abbv from wiki and returning first column
 def state_list():
 	us_states = pd.read_html('https://simple.wikipedia.org/wiki/List_of_U.S._states')
 	return us_states[0][0][1:]
