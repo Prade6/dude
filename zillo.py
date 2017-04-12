@@ -4,11 +4,15 @@ import ssl
 import pickle
 import matplotlib.pyplot as plt 
 from matplotlib import style
+
+
+#using styles from matplot
 style.use("fivethirtyeight")
 
 
 #apikey for quandl site
 api_key = "A-ZstTgSgsTsS3-XdHV-"
+
 ssl._create_default_https_context = ssl._create_unverified_context
 
 

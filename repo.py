@@ -1,5 +1,3 @@
-
-
 import urllib
 import re
 
