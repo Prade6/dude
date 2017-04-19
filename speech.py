@@ -27,6 +27,7 @@ def hear():
 
 ask_help = "what can i do for you?"
 
+
 k = r.recognize_google(audio)
 
 
