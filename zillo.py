@@ -31,7 +31,7 @@ def grab_state__data():
 		query = "FMAC/HPI_"+str(abbv)
 		df = quandl.get(query, authtoken = api_key)
 		df.columns = [str(abbv)]
-
+		
 		if main_df.empty:
 			main_df = df
 		else:
@@ -49,5 +49,6 @@ hpi_data = pickle.load(pickle_in)
 hpi_data.plot()
 plt.legend().remove()
 plt.show()
+
 
 
