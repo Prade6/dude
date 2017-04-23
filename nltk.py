@@ -10,9 +10,9 @@ def stp()
 
 	filtered_sent = []
 
-	for w in words:
-		if w not in stop_words:
-			filtered_sent.appene(w)
+	"""for w in words:
+					if w not in stop_words:
+						filtered_sent.appene(w)"""
 	
 
 	# one liner instead of the above commented out for loop________________
