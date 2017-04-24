@@ -39,6 +39,10 @@ elif r.recognize_google(audio) == "hello":
     print(ask_help)
     os.system("Say" + " " + ask_help)
 
+elif "Rahul" in k:
+    print(ask_help)
+    os.system("Say" + " " + "What can I do for you Rahul")
+
 elif r.recognize_google(audio) == "how are you":
     os.system("Say" + " " + "I am great, how are you")
 
